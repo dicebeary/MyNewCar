@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="MakeCell" customModule="MyNewCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pfm-Tb-24m">
+                        <rect key="frame" x="16" y="16" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pfm-Tb-24m" secondAttribute="height" multiplier="1:1" id="agJ-PF-6N4"/>
+                            <constraint firstAttribute="height" constant="64" id="ojb-gE-a6B"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKa-08-Gq5">
+                        <rect key="frame" x="96" y="16" width="188" height="64"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sro-6n-gPz">
+                        <rect key="frame" x="300" y="32" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="o1i-zV-107"/>
+                            <constraint firstAttribute="width" secondItem="Sro-6n-gPz" secondAttribute="height" multiplier="1:1" id="vgR-XS-KrU"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pfm-Tb-24m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9k4-8o-fuh"/>
+                    <constraint firstAttribute="trailing" secondItem="Sro-6n-gPz" secondAttribute="trailing" constant="16" id="DyN-Ut-IHW"/>
+                    <constraint firstItem="ZKa-08-Gq5" firstAttribute="leading" secondItem="pfm-Tb-24m" secondAttribute="trailing" constant="16" id="Rl1-Gh-BdA"/>
+                    <constraint firstItem="Sro-6n-gPz" firstAttribute="leading" secondItem="ZKa-08-Gq5" secondAttribute="trailing" constant="16" id="cVL-j3-Pg4"/>
+                    <constraint firstItem="ZKa-08-Gq5" firstAttribute="bottom" secondItem="pfm-Tb-24m" secondAttribute="bottom" id="j6r-xX-R8M"/>
+                    <constraint firstItem="ZKa-08-Gq5" firstAttribute="top" secondItem="pfm-Tb-24m" secondAttribute="top" id="n6U-cK-Ejg"/>
+                    <constraint firstAttribute="bottom" secondItem="pfm-Tb-24m" secondAttribute="bottom" constant="16" id="oxR-e9-MK3"/>
+                    <constraint firstItem="Sro-6n-gPz" firstAttribute="centerY" secondItem="pfm-Tb-24m" secondAttribute="centerY" id="pXT-Hg-VhO"/>
+                    <constraint firstItem="pfm-Tb-24m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="sEq-AS-ezY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favoriteButton" destination="Sro-6n-gPz" id="RNX-pG-9MI"/>
+                <outlet property="makeImageView" destination="pfm-Tb-24m" id="cAu-J3-mVY"/>
+                <outlet property="nameLabel" destination="ZKa-08-Gq5" id="Npk-YL-fcQ"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="132.58928571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>

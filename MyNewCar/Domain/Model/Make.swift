@@ -1,0 +1,72 @@
+struct Make {
+    let id: String
+    let name: String
+    let imageUrl: String
+}
+
+extension Make {
+    static var mock: [Make] {
+        return [
+            .init(id: "1",
+                  name: "Tesla",
+                  imageUrl: "https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png"),
+            .init(id: "2",
+                  name: "BMW",
+                  imageUrl: "https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white.png"),
+            .init(id: "3",
+                  name: "Ferrari",
+                  imageUrl: "https://www.carlogos.org/car-logos/ferrari-logo-750x1100.png"),
+            .init(id: "4",
+                  name: "Ford",
+                  imageUrl: "https://www.carlogos.org/car-logos/ford-logo-2017.png"),
+            .init(id: "5",
+                  name: "Porsche",
+                  imageUrl: "https://www.carlogos.org/car-logos/porsche-logo-2100x1100.png"),
+            .init(id: "6",
+                  name: "Honda",
+                  imageUrl: "https://www.carlogos.org/car-logos/honda-logo-1700x1150.png"),
+            .init(id: "7",
+                  name: "Lamborghini",
+                  imageUrl: "https://www.carlogos.org/car-logos/lamborghini-logo-1000x1100.png"),
+            .init(id: "8",
+                  name: "Toyota",
+                  imageUrl: "https://www.carlogos.org/car-logos/toyota-logo-2019-3700x1200.png"),
+            .init(id: "9",
+                  name: "Bentley",
+                  imageUrl: "https://www.carlogos.org/car-logos/bentley-logo-1400x800.png"),
+            .init(id: "10",
+                  name: "Maserati",
+                  imageUrl: "https://www.carlogos.org/car-logos/maserati-logo-2020.png"),
+            .init(id: "11",
+                  name: "Audi",
+                  imageUrl: "https://www.carlogos.org/car-logos/audi-logo-2016.png"),
+            .init(id: "12",
+                  name: "Jeep",
+                  imageUrl: "https://www.carlogos.org/car-logos/jeep-logo-1993.png"),
+            .init(id: "13",
+                  name: "Subaru",
+                  imageUrl: "https://www.carlogos.org/car-logos/subaru-logo-2003.png"),
+            .init(id: "14",
+                  name: "Cadillac",
+                  imageUrl: "https://www.carlogos.org/car-logos/cadillac-logo-2021.png"),
+            .init(id: "15",
+                  name: "Chrysler",
+                  imageUrl: "https://www.carlogos.org/car-logos/chrysler-logo-2010.png"),
+            .init(id: "16",
+                  name: "Chevrolet",
+                  imageUrl: "https://www.carlogos.org/logo/Corvette-logo-2014-1024x768.png"),
+            .init(id: "17",
+                  name: "Dodge",
+                  imageUrl: "https://www.carlogos.org/logo/Dodge-logo-2011-3840x2160.png"),
+            .init(id: "18",
+                  name: "Hyundai",
+                  imageUrl: "https://www.carlogos.org/logo/Hyundai-logo-silver-2560x1440.png"),
+            .init(id: "19",
+                  name: "Jaguar",
+                  imageUrl: "https://www.carlogos.org/logo/Jaguar-logo-2012-1920x1080.png"),
+            .init(id: "20",
+                  name: "Mazda",
+                  imageUrl: "https://www.carlogos.org/logo/Mazda-logo-1997-1920x1080.png")
+        ]
+    }
+}
